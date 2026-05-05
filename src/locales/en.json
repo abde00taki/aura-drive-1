@@ -1,0 +1,238 @@
+{
+  "nav": {
+    "home": "Home",
+    "fleet": "Our Fleet",
+    "guides": "Travel Guides",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Discover Morocco at Your Own Pace",
+    "subtitle": "Your Moroccan Adventure Starts Here.",
+    "cta": "Start Exploring"
+  },
+  "fleet": {
+    "title": "Choose Your Travel Companion",
+    "subtitle": "Choose the perfect vehicle for your journey",
+    "filters": {
+      "all": "All",
+      "economic": "Economic",
+      "suv": "SUV",
+      "luxury": "Luxury",
+      "minibus": "Minibus"
+    },
+    "bookNow": "Book Now",
+    "auto": "Auto",
+    "manual": "Manual",
+    "fuel": {
+      "petrol": "Petrol",
+      "diesel": "Diesel",
+      "electric": "Electric",
+      "hybrid": "Hybrid"
+    },
+    "pricePerDay": "MAD / day",
+    "pricePerWeek": "MAD / week",
+    "pricePerMonth": "MAD / month"
+  },
+  "booking": {
+    "step1": "Car Summary",
+    "step2": "Your Details",
+    "next": "Next",
+    "back": "Back",
+    "confirm": "Confirm via WhatsApp",
+    "form": {
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "address": "Address",
+      "pickup": "Pick-up Date & Time",
+      "dropoff": "Drop-off Date & Time"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved. Aura Drive.",
+    "sendMessage": "Send Message"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a premium car rental agency providing fast, reliable service. We handle bookings quickly via WhatsApp with immediate client response.",
+    "stats": {
+      "response": "Response Time: < 5 mins",
+      "satisfaction": "100% Satisfaction",
+      "delivery": "Fast Delivery"
+    }
+  },
+  "location": {
+    "title": "Our Location",
+    "description": "Aéroport Mohammed V, Casablanca"
+  },
+  "showcase": {
+    "title": "Choose Your Travel Companion",
+    "bookNow": "Book Now"
+  },
+  "destinations": {
+    "title": "Destinations & Experiences",
+    "card1": {
+      "title": "Atlas Mountains & Sahara",
+      "desc": "Conquer the dunes and valleys.",
+      "recommend": "Recommended: SUVs"
+    },
+    "card2": {
+      "title": "Coastal Escapes",
+      "desc": "Relax by the ocean from Essaouira to Agadir.",
+      "recommend": "Recommended: Luxury / Minibus"
+    },
+    "card3": {
+      "title": "City Exploring",
+      "desc": "Navigate the bustling streets of Marrakech and Casablanca.",
+      "recommend": "Recommended: Economic / Compact"
+    }
+  },
+  "destinationDetails": {
+    "placesToVisitTitle": "Places to Visit",
+    "recommendedCarsTitle": "Recommended Vehicles",
+    "recommendedCarsSubtitle": "Vehicles best suited for this terrain.",
+    "mapTitle": "Explore the Route",
+    "mapSubtitle": "Get a feel for your journey on the map.",
+    "sahara": {
+      "title": "Atlas Mountains & Sahara",
+      "subtitle": "Experience the majestic peaks and endless dunes.",
+      "places": {
+        "ouarzazate": {
+          "title": "Ouarzazate",
+          "desc": "Known as the door of the desert, this city is famous for its cinematic landscapes and ancient kasbahs.",
+          "distance": "200 km from Marrakech"
+        },
+        "merzouga": {
+          "title": "Merzouga Dunes",
+          "desc": "Witness breathtaking sunsets over the towering sand dunes of Erg Chebbi. A truly magical experience.",
+          "distance": "Deep into the Sahara"
+        },
+        "ait_ben_haddou": {
+          "title": "Aït Benhaddou",
+          "desc": "A historic fortified village along the former caravan route between the Sahara and Marrakech.",
+          "distance": "UNESCO World Heritage Site"
+        }
+      }
+    },
+    "coastal": {
+      "title": "Coastal Escapes",
+      "subtitle": "Discover tranquil beaches and vibrant coastal towns.",
+      "places": {
+        "essaouira": {
+          "title": "Essaouira",
+          "desc": "A charming port city with a beautiful medina, historic ramparts, and a relaxed, artsy vibe.",
+          "distance": "190 km from Marrakech"
+        },
+        "taghazout": {
+          "title": "Taghazout",
+          "desc": "A famous fishing village turned surfing paradise. Perfect for catching waves and relaxing on pristine shores.",
+          "distance": "North of Agadir"
+        },
+        "agadir": {
+          "title": "Agadir",
+          "desc": "Known for its wide crescent beach, bustling promenade, and year-round sunshine.",
+          "distance": "Major Coastal Hub"
+        }
+      }
+    },
+    "city": {
+      "title": "City Exploring",
+      "subtitle": "Immerse yourself in the bustling medinas and rich history.",
+      "places": {
+        "marrakech": {
+          "title": "Marrakech",
+          "desc": "The Red City, filled with vibrant souks, stunning palaces, and the lively Jemaa el-Fnaa square.",
+          "distance": "Cultural Heart"
+        },
+        "chefchaouen": {
+          "title": "Chefchaouen",
+          "desc": "The famous Blue City nestled in the Rif Mountains, offering picturesque alleys and a calm atmosphere.",
+          "distance": "Northern Jewel"
+        },
+        "fes": {
+          "title": "Fes",
+          "desc": "Home to the oldest continuously functioning university in the world and an incredibly intricate medieval medina.",
+          "distance": "Spiritual Capital"
+        }
+      }
+    }
+  },
+  "blog": {
+    "title": "Travel Guides & Moroccan Road Trips",
+    "subtitle": "Discover the beauty of Morocco with our exclusive travel guides.",
+    "readMore": "Read More",
+    "publishedOn": "Published on",
+    "minRead": "min read",
+    "articles": {
+      "ultimate-road-trip": {
+        "title": "The Ultimate Moroccan Road Trip: Tangier to Merzouga",
+        "excerpt": "Experience the diversity of Morocco, from Mediterranean charm to golden dunes, in this comprehensive road trip guide.",
+        "contentBlocks": [
+          "Starting your journey in Tangier, you'll immediately feel the blend of Mediterranean breeze and North African culture. The drive south takes you through the stunning Rif Mountains, where the blue city of Chefchaouen awaits.",
+          "As you continue towards the center of the country, the landscape transforms. The lush greenery gives way to the stark beauty of the Middle Atlas, passing through Ifrane and the cedar forests of Azrou.",
+          "The grand finale of this ultimate road trip is reaching the Sahara. Driving into Merzouga and seeing the golden dunes of Erg Chebbi rise from the flat desert is a memory that will last a lifetime. Prepare your SUV for an unforgettable adventure."
+        ]
+      },
+      "imperial-cities": {
+        "title": "Exploring the Imperial Cities: A Historic Drive",
+        "excerpt": "Take a journey through time by visiting Morocco's four imperial cities: Marrakech, Fes, Meknes, and Rabat.",
+        "contentBlocks": [
+          "Morocco's rich history is best experienced by driving between its four Imperial Cities. Start in Rabat, the modern capital, where ancient ruins meet the Atlantic Ocean.",
+          "A short drive inland brings you to Meknes, the city of Moulay Ismail, featuring massive gates and the nearby Roman ruins of Volubilis. From there, the short journey to Fes takes you into the spiritual heart of the country.",
+          "Finally, head south to Marrakech, the Red City. The drive from Fes to Marrakech is long but incredibly scenic, offering views of the Atlas Mountains before arriving in the bustling, vibrant city of the south."
+        ]
+      },
+      "atlantic-escapade": {
+        "title": "The Atlantic Escapade: Casablanca to Agadir",
+        "excerpt": "Drive the scenic coastline of Morocco, enjoying fresh seafood, surfing spots, and relaxed coastal vibes.",
+        "contentBlocks": [
+          "The Atlantic coast of Morocco offers a completely different driving experience. Starting in the economic hub of Casablanca, take the coastal road down towards the historic port of El Jadida.",
+          "The real gem of this trip is Essaouira. This windy, artistic city is perfect for a relaxed stopover. The drive is relatively flat and easy, making it ideal for a comfortable luxury car or an economic compact.",
+          "Continuing south, you'll reach the surfing paradise of Taghazout before finally arriving in Agadir. The coastal highway provides endless ocean views and spectacular sunsets throughout your journey."
+        ]
+      },
+      "driving-tips": {
+        "title": "Essential Tips for Driving in Morocco",
+        "excerpt": "A complete tourist guide covering rules, navigation, and choosing the right car for the diverse Moroccan terrain.",
+        "contentBlocks": [
+          "Driving in Morocco is generally safe and roads between major cities are well-maintained. Always carry your driver's license, passport, and rental documents. Speed limits are strictly enforced by police checkpoints.",
+          "Navigation is straightforward with apps like Google Maps, but downloading offline maps is highly recommended, especially when heading into the Atlas Mountains or the Sahara where signal can be spotty.",
+          "Choosing the right car is crucial. For coastal and city driving, an economic or luxury sedan is perfect. However, if you plan to conquer the Atlas or head to the desert, renting a reliable SUV is highly recommended for comfort and safety."
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "Your Journey, Our Passion",
+    "heroSubtitle": "Experience Morocco with unparalleled luxury and comfort.",
+    "storyTitle": "Our Story",
+    "storyContent": "Founded with a deep love for Moroccan landscapes, Aura Drive began as a small vision to elevate the standard of travel. We quickly transitioned from a standard rental agency to a dedicated provider of premium travel experiences. Today, we pride ourselves on offering a fleet that meets the highest standards of luxury, paired with local expertise that ensures every journey is unforgettable.",
+    "storyImageAlt": "Aura Drive Premium Fleet in Morocco",
+    "valuesTitle": "Our Core Values",
+    "values": {
+      "fleet": {
+        "title": "Premium Fleet",
+        "desc": "A meticulously maintained selection of luxury and adventure vehicles."
+      },
+      "support": {
+        "title": "24/7 Support",
+        "desc": "Round-the-clock assistance for complete peace of mind."
+      },
+      "expertise": {
+        "title": "Local Expertise",
+        "desc": "Deep knowledge of Moroccan roads, routes, and hidden gems."
+      },
+      "pricing": {
+        "title": "Transparent Pricing",
+        "desc": "No hidden fees. What you see is exactly what you get."
+      }
+    },
+    "stats": {
+      "cars": "+50 Premium Cars",
+      "clients": "+1000 Happy Clients",
+      "assistance": "24/7 Assistance"
+    },
+    "ctaTitle": "Ready for your next adventure?",
+    "ctaButton": "Explore Our Fleet"
+  }
+}

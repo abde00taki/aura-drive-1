@@ -1,0 +1,159 @@
+import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { Menu, X, Globe, Sun, Moon } from 'lucide-react';
+import clsx from 'clsx';
+import brandLogo from '../assets/logo.png';
+import { useTheme } from '../hooks/useTheme';
+
+export default function NavBar() {
+  const { t, i18n } = useTranslation();
+  const { theme, toggleTheme } = useTheme();
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setIsOpen(false);
+  };
+
+  const navLinks = [
+    { to: '/', label: t('nav.home') },
+    { to: '/fleet', label: t('nav.fleet') },
+    { to: '/guides', label: t('nav.guides') },
+    { to: '/about', label: t('nav.about') },
+    { to: '/contact', label: t('nav.contact') },
+  ];
+
+  return (
+    <nav
+      className={clsx(
+        'fixed w-full z-50 transition-all duration-300 ease-in-out',
+        scrolled ? 'bg-white/90 dark:bg-[#121212]/90 backdrop-blur-md py-3 shadow-sm border-b border-black/5 dark:border-white/5' : 'bg-transparent py-5'
+      )}
+    >
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <NavLink to="/" className="flex items-center gap-3">
+            <img src={brandLogo} alt="Aura Drive Logo" className="h-10 w-auto" />
+            <span className="text-2xl font-heading font-bold tracking-wider uppercase transition-colors duration-300 text-gray-900 dark:text-white">
+              AURA DRIVE
+            </span>
+          </NavLink>
+
+          {/* Desktop Nav */}
+          <div className="hidden md:flex items-center space-x-8 rtl:space-x-reverse">
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={({ isActive }) =>
+                  clsx(
+                    'text-sm uppercase tracking-widest font-medium transition-colors hover:text-primary dark:hover:text-[#C17767]',
+                    isActive ? 'text-primary dark:text-[#C17767]' : 'text-gray-600 dark:text-gray-100'
+                  )
+                }
+              >
+                {link.label}
+              </NavLink>
+            ))}
+
+            {/* Lang Switcher */}
+            <div className="relative group">
+              <button className="flex items-center space-x-1 text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] transition-colors">
+                <Globe className="w-4 h-4" />
+                <span className="text-sm uppercase">{i18n.language}</span>
+              </button>
+              <div className="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-24 bg-white dark:bg-[#1a1a1a] border border-black/5 dark:border-white/5 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                {['en', 'fr', 'ar'].map((lng) => (
+                  <button
+                    key={lng}
+                    onClick={() => changeLanguage(lng)}
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-600 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-[#242424] hover:text-primary dark:hover:text-[#C17767]"
+                  >
+                    {lng.toUpperCase()}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Dark Mode Toggle */}
+            <button 
+              onClick={toggleTheme}
+              className="flex items-center justify-center p-2 rounded-full text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] hover:bg-black/5 dark:hover:bg-white/5 transition-all duration-300"
+              aria-label="Toggle Dark Mode"
+            >
+              {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+          </div>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center space-x-2 rtl:space-x-reverse">
+            <button 
+              onClick={toggleTheme}
+              className="p-2 text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] transition-colors"
+            >
+              {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            </button>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-gray-900 dark:text-white hover:text-primary dark:hover:text-[#C17767] transition-colors"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Nav */}
+      <div
+        className={clsx(
+          'md:hidden absolute w-full bg-white dark:bg-[#1a1a1a] border-b border-black/5 dark:border-white/5 shadow-lg transition-all duration-300 ease-in-out',
+          isOpen ? 'max-h-screen py-4 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+        )}
+      >
+        <div className="container mx-auto px-4 flex flex-col space-y-4">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                clsx(
+                  'text-lg font-medium transition-colors border-b border-black/5 dark:border-white/5 pb-2',
+                  isActive ? 'text-primary dark:text-[#C17767]' : 'text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767]'
+                )
+              }
+            >
+              {link.label}
+            </NavLink>
+          ))}
+
+          <div className="flex space-x-4 rtl:space-x-reverse pt-2">
+            {['en', 'fr', 'ar'].map((lng) => (
+              <button
+                key={lng}
+                onClick={() => changeLanguage(lng)}
+                className={clsx(
+                  'px-3 py-1 rounded text-sm border transition-colors',
+                  i18n.language === lng ? 'bg-primary border-primary text-white shadow-md' : 'bg-white dark:bg-[#242424] border-black/10 dark:border-white/10 text-gray-600 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-[#333] dark:hover:text-[#C17767]'
+                )}
+              >
+                {lng.toUpperCase()}
+              </button>
+            ))}
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+}
