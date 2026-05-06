@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet-async';
 
@@ -21,28 +21,28 @@ import AboutUs from './pages/AboutUs';
 
 function App() {
   const { i18n, t } = useTranslation();
+  const location = useLocation();
   const [isLoading, setIsLoading] = useState(true);
   const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    const handleLoad = () => {
-      setIsFading(true);
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 700);
-    };
+    setIsLoading(true);
+    setIsFading(false);
+    window.scrollTo(0, 0);
 
-    if (document.readyState === 'complete') {
-      handleLoad();
-    } else {
-      window.addEventListener('load', handleLoad);
-      const fallback = setTimeout(handleLoad, 2000);
-      return () => {
-        window.removeEventListener('load', handleLoad);
-        clearTimeout(fallback);
-      };
-    }
-  }, []);
+    const fadeOutTimer = setTimeout(() => {
+      setIsFading(true);
+    }, 500);
+
+    const removeLoaderTimer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); // 500ms delay + 500ms transition
+
+    return () => {
+      clearTimeout(fadeOutTimer);
+      clearTimeout(removeLoaderTimer);
+    };
+  }, [location.pathname]);
 
   // Handle RTL for Arabic
   useEffect(() => {
