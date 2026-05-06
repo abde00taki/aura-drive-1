@@ -30,16 +30,52 @@ function App() {
     setIsFading(false);
     window.scrollTo(0, 0);
 
-    const fadeOutTimer = setTimeout(() => {
-      setIsFading(true);
-    }, 500);
+    let isMounted = true;
+    let fallbackTimer;
+    let removeLoaderTimer;
 
-    const removeLoaderTimer = setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); // 500ms delay + 500ms transition
+    const finishLoading = () => {
+      if (!isMounted) return;
+      setIsFading(true);
+      removeLoaderTimer = setTimeout(() => {
+        if (isMounted) setIsLoading(false);
+      }, 500);
+    };
+
+    // Give React a tiny tick to render new DOM elements
+    setTimeout(() => {
+      if (!isMounted) return;
+
+      const images = Array.from(document.querySelectorAll('img'));
+      
+      if (images.length === 0) {
+        finishLoading();
+        return;
+      }
+
+      const promises = images.map((img) => {
+        if (img.complete) return Promise.resolve();
+        return new Promise((resolve) => {
+          img.onload = resolve;
+          img.onerror = resolve; // Resolve on error so we don't block
+        });
+      });
+
+      Promise.all(promises).then(() => {
+        clearTimeout(fallbackTimer);
+        finishLoading();
+      });
+
+      // 3-second safety fallback timeout
+      fallbackTimer = setTimeout(() => {
+        finishLoading();
+      }, 3000);
+
+    }, 50);
 
     return () => {
-      clearTimeout(fadeOutTimer);
+      isMounted = false;
+      clearTimeout(fallbackTimer);
       clearTimeout(removeLoaderTimer);
     };
   }, [location.pathname]);
@@ -55,8 +91,8 @@ function App() {
       {isLoading && <Preloader isFading={isFading} />}
       <div className="flex flex-col min-h-screen">
       <Helmet>
-        <title>{`Aura Drive - ${t('nav.home')}`}</title>
-        <meta name="description" content={t('hero.subtitle')} />
+        <title>{t('seo.title')}</title>
+        <meta name="description" content={t('seo.desc')} />
       </Helmet>
       
       <NavBar />
