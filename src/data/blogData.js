@@ -1,7 +1,7 @@
 export const blogData = [
   {
     id: 'ultimate-road-trip',
-    coverImage: 'https://www.morocco-guide.com/images/1200/morocco-culture.jpg',
+    coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?q=80&w=2070&auto=format&fit=crop',
     date: '2026-05-01',
     author: 'Aura Drive Team',
   },
