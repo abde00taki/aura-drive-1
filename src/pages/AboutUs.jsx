@@ -23,7 +23,7 @@ export default function AboutUs() {
       {/* Hero Section */}
       <div className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?"
+          src="https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=2070&auto=format&fit=crop"
           alt="Moroccan Landscape"
           className="absolute inset-0 w-full h-full object-cover opacity-80"
         />

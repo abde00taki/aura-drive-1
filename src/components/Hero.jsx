@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import heroVideo from '../assets/hero.mp4';
+import heroImg from '../assets/hero.png';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -11,11 +12,17 @@ export default function Hero() {
       {/* Background Video (z-0 باش ما يتخباش مورا الموقع) */}
       <video
         src={heroVideo}
+        poster={heroImg}
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
+      />
+      <img
+        src={heroImg}
+        alt="Hero Background"
+        className="absolute inset-0 w-full h-full object-cover z-0 block md:hidden"
       />
 
       {/* Overlay (z-10 باش يجي فوق الفيديو) */}
