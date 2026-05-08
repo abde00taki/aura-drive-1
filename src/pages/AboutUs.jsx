@@ -16,7 +16,7 @@ export default function AboutUs() {
   return (
     <div className="bg-[#F9F6F0] dark:bg-[#121212] min-h-screen transition-colors duration-300">
       <Helmet>
-        <title>{`Aura Drive - ${t('nav.about')}`}</title>
+        <title>{`Drive Car Go - ${t('nav.about')}`}</title>
         <meta name="description" content={t('aboutPage.heroSubtitle')} />
       </Helmet>
 

@@ -28,7 +28,7 @@ export default function DestinationDetails() {
   return (
     <>
       <Helmet>
-        <title>Aura Drive - {t(destination.titleKey)}</title>
+        <title>Drive Car Go - {t(destination.titleKey)}</title>
       </Helmet>
 
       {/* Hero Section */}

@@ -1,0 +1,242 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "fleet": "Nuestra Flota",
+    "guides": "Guías de Viaje",
+    "about": "Sobre Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Descubre Marruecos a tu Propio Ritmo",
+    "subtitle": "Tu Aventura Marroquí Comienza Aquí.",
+    "cta": "Empezar a Explorar"
+  },
+  "fleet": {
+    "title": "Elige tu Compañero de Viaje",
+    "subtitle": "Elige el vehículo perfecto para tu viaje",
+    "filters": {
+      "all": "Todos",
+      "economic": "Económico",
+      "suv": "SUV",
+      "luxury": "Lujo",
+      "minibus": "Minibús"
+    },
+    "bookNow": "Reservar Ahora",
+    "auto": "Automático",
+    "manual": "Manual",
+    "fuel": {
+      "petrol": "Gasolina",
+      "diesel": "Diésel",
+      "electric": "Eléctrico",
+      "hybrid": "Híbrido"
+    },
+    "pricePerDay": "MAD / día",
+    "pricePerWeek": "MAD / semana",
+    "pricePerMonth": "MAD / mes"
+  },
+  "booking": {
+    "step1": "Resumen del Vehículo",
+    "step2": "Tus Datos",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "confirm": "Confirmar vía WhatsApp",
+    "form": {
+      "name": "Nombre Completo",
+      "phone": "Número de Teléfono",
+      "address": "Dirección",
+      "pickup": "Fecha y Hora de Recogida",
+      "dropoff": "Fecha y Hora de Devolución"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados. Drive Car Go.",
+    "sendMessage": "Enviar Mensaje"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "description": "Somos una agencia de alquiler de coches premium que ofrece un servicio rápido y fiable. Gestionamos las reservas rápidamente vía WhatsApp con respuesta inmediata al cliente.",
+    "stats": {
+      "response": "Tiempo de respuesta: < 5 mins",
+      "satisfaction": "100% Satisfacción",
+      "delivery": "Entrega Rápida"
+    }
+  },
+  "location": {
+    "title": "Nuestra Ubicación",
+    "description": "Aéroport Mohammed V, Casablanca"
+  },
+  "showcase": {
+    "title": "Elige tu Compañero de Viaje",
+    "bookNow": "Reservar Ahora"
+  },
+  "destinations": {
+    "title": "Destinos y Experiencias",
+    "card1": {
+      "title": "Montañas del Atlas y el Sahara",
+      "desc": "Conquista las dunas y valles.",
+      "recommend": "Recomendado: SUVs"
+    },
+    "card2": {
+      "title": "Escapadas Costeras",
+      "desc": "Relájate junto al océano desde Essaouira hasta Agadir.",
+      "recommend": "Recomendado: Lujo / Minibús"
+    },
+    "card3": {
+      "title": "Exploración de la Ciudad",
+      "desc": "Navega por las bulliciosas calles de Marrakech y Casablanca.",
+      "recommend": "Recomendado: Económico / Compacto"
+    }
+  },
+  "destinationDetails": {
+    "placesToVisitTitle": "Lugares para Visitar",
+    "recommendedCarsTitle": "Vehículos Recomendados",
+    "recommendedCarsSubtitle": "Vehículos más adecuados para este terreno.",
+    "mapTitle": "Explora la Ruta",
+    "mapSubtitle": "Conoce tu viaje en el mapa.",
+    "sahara": {
+      "title": "Montañas del Atlas y el Sahara",
+      "subtitle": "Experimenta los majestuosos picos y las interminables dunas.",
+      "places": {
+        "ouarzazate": {
+          "title": "Ouarzazate",
+          "desc": "Conocida como la puerta del desierto, esta ciudad es famosa por sus paisajes cinematográficos y antiguas kasbahs.",
+          "distance": "200 km de Marrakech"
+        },
+        "merzouga": {
+          "title": "Dunas de Merzouga",
+          "desc": "Presencia impresionantes puestas de sol sobre las imponentes dunas de arena de Erg Chebbi. Una experiencia verdaderamente mágica.",
+          "distance": "En lo profundo del Sahara"
+        },
+        "ait_ben_haddou": {
+          "title": "Aït Benhaddou",
+          "desc": "Un pueblo fortificado histórico a lo largo de la antigua ruta de caravanas entre el Sahara y Marrakech.",
+          "distance": "Patrimonio de la Humanidad por la UNESCO"
+        }
+      }
+    },
+    "coastal": {
+      "title": "Escapadas Costeras",
+      "subtitle": "Descubre playas tranquilas y vibrantes ciudades costeras.",
+      "places": {
+        "essaouira": {
+          "title": "Essaouira",
+          "desc": "Una encantadora ciudad portuaria con una hermosa medina, murallas históricas y un ambiente relajado y artístico.",
+          "distance": "190 km de Marrakech"
+        },
+        "taghazout": {
+          "title": "Taghazout",
+          "desc": "Un famoso pueblo de pescadores convertido en un paraíso para el surf. Perfecto para atrapar olas y relajarse en playas vírgenes.",
+          "distance": "Al norte de Agadir"
+        },
+        "agadir": {
+          "title": "Agadir",
+          "desc": "Conocida por su amplia playa en forma de media luna, su bullicioso paseo marítimo y sol durante todo el año.",
+          "distance": "Principal Centro Costero"
+        }
+      }
+    },
+    "city": {
+      "title": "Exploración de la Ciudad",
+      "subtitle": "Sumérgete en las bulliciosas medinas y la rica historia.",
+      "places": {
+        "marrakech": {
+          "title": "Marrakech",
+          "desc": "La Ciudad Roja, llena de vibrantes zocos, impresionantes palacios y la animada plaza Jemaa el-Fnaa.",
+          "distance": "Corazón Cultural"
+        },
+        "chefchaouen": {
+          "title": "Chefchaouen",
+          "desc": "La famosa Ciudad Azul enclavada en las Montañas del Rif, que ofrece callejuelas pintorescas y un ambiente tranquilo.",
+          "distance": "Joya del Norte"
+        },
+        "fes": {
+          "title": "Fez",
+          "desc": "Hogar de la universidad en funcionamiento continuo más antigua del mundo y una medina medieval increíblemente intrincada.",
+          "distance": "Capital Espiritual"
+        }
+      }
+    }
+  },
+  "blog": {
+    "title": "Guías de Viaje y Rutas por Marruecos",
+    "subtitle": "Descubre la belleza de Marruecos con nuestras guías de viaje exclusivas.",
+    "readMore": "Leer Más",
+    "publishedOn": "Publicado el",
+    "minRead": "min de lectura",
+    "articles": {
+      "ultimate-road-trip": {
+        "title": "El Viaje por Carretera Definitivo en Marruecos: De Tánger a Merzouga",
+        "excerpt": "Experimenta la diversidad de Marruecos, desde el encanto mediterráneo hasta las dunas doradas, en esta completa guía de viaje.",
+        "contentBlocks": [
+          "Comenzando tu viaje en Tánger, sentirás de inmediato la mezcla de la brisa mediterránea y la cultura norteafricana. El camino hacia el sur te lleva a través de las impresionantes Montañas del Rif, donde te espera la ciudad azul de Chefchaouen.",
+          "A medida que avanzas hacia el centro del país, el paisaje se transforma. El verde exuberante da paso a la cruda belleza del Medio Atlas, pasando por Ifrane y los bosques de cedros de Azrou.",
+          "El gran final de este viaje definitivo es llegar al Sahara. Conducir hasta Merzouga y ver las dunas doradas de Erg Chebbi elevarse desde el desierto plano es un recuerdo que durará toda la vida. Prepara tu SUV para una aventura inolvidable."
+        ]
+      },
+      "imperial-cities": {
+        "title": "Explorando las Ciudades Imperiales: Un Viaje Histórico",
+        "excerpt": "Haz un viaje en el tiempo visitando las cuatro ciudades imperiales de Marruecos: Marrakech, Fez, Meknes y Rabat.",
+        "contentBlocks": [
+          "La rica historia de Marruecos se experimenta mejor conduciendo entre sus cuatro Ciudades Imperiales. Comienza en Rabat, la capital moderna, donde las ruinas antiguas se encuentran con el Océano Atlántico.",
+          "Un corto viaje hacia el interior te lleva a Meknes, la ciudad de Moulay Ismail, con sus puertas masivas y las cercanas ruinas romanas de Volubilis. Desde allí, el corto trayecto a Fez te lleva al corazón espiritual del país.",
+          "Finalmente, dirígete al sur hacia Marrakech, la Ciudad Roja. El viaje de Fez a Marrakech es largo pero increíblemente pintoresco, ofreciendo vistas de las Montañas del Atlas antes de llegar a la vibrante y bulliciosa ciudad del sur."
+        ]
+      },
+      "atlantic-escapade": {
+        "title": "La Escapada Atlántica: De Casablanca a Agadir",
+        "excerpt": "Conduce por la pintoresca costa de Marruecos, disfrutando de mariscos frescos, lugares para surfear y relajadas vibraciones costeras.",
+        "contentBlocks": [
+          "La costa atlántica de Marruecos ofrece una experiencia de conducción completamente diferente. Comenzando en el centro económico de Casablanca, toma la carretera costera hacia el histórico puerto de El Yadida.",
+          "La verdadera joya de este viaje es Essaouira. Esta ciudad artística y ventosa es perfecta para una parada relajada. El trayecto es relativamente plano y fácil, lo que lo hace ideal para un cómodo coche de lujo o un compacto económico.",
+          "Continuando hacia el sur, llegarás al paraíso del surf de Taghazout antes de llegar finalmente a Agadir. La carretera costera ofrece vistas interminables del océano y atardeceres espectaculares durante todo el viaje."
+        ]
+      },
+      "driving-tips": {
+        "title": "Consejos Esenciales para Conducir en Marruecos",
+        "excerpt": "Una guía turística completa que cubre reglas, navegación y cómo elegir el coche adecuado para el diverso terreno marroquí.",
+        "contentBlocks": [
+          "Conducir en Marruecos es generalmente seguro y las carreteras entre las principales ciudades están bien mantenidas. Lleva siempre tu licencia de conducir, pasaporte y documentos de alquiler. Los límites de velocidad son estrictamente controlados por puntos de control policiales.",
+          "La navegación es sencilla con aplicaciones como Google Maps, pero se recomienda encarecidamente descargar mapas sin conexión, especialmente cuando te diriges a las Montañas del Atlas o al Sahara, donde la señal puede ser irregular.",
+          "Elegir el coche adecuado es crucial. Para la conducción costera y en la ciudad, un sedán económico o de lujo es perfecto. Sin embargo, si planeas conquistar el Atlas o dirigirte al desierto, alquilar un SUV fiable es muy recomendable por comodidad y seguridad."
+        ]
+      }
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "Tu Viaje, Nuestra Pasión",
+    "heroSubtitle": "Experimenta Marruecos con un lujo y confort incomparables.",
+    "storyTitle": "Nuestra Historia",
+    "storyContent": "Fundada con un profundo amor por los paisajes marroquíes, Drive Car Go comenzó como una pequeña visión para elevar el estándar de los viajes. Pasamos rápidamente de una agencia de alquiler estándar a un proveedor dedicado a experiencias de viaje premium. Hoy en día, nos enorgullecemos de ofrecer una flota que cumple con los más altos estándares de lujo, combinada con una experiencia local que asegura que cada viaje sea inolvidable.",
+    "storyImageAlt": "Flota Premium de Drive Car Go en Marruecos",
+    "valuesTitle": "Nuestros Valores Fundamentales",
+    "values": {
+      "fleet": {
+        "title": "Flota Premium",
+        "desc": "Una selección meticulosamente mantenida de vehículos de lujo y aventura."
+      },
+      "support": {
+        "title": "Soporte 24/7",
+        "desc": "Asistencia las 24 horas para tu total tranquilidad."
+      },
+      "expertise": {
+        "title": "Experiencia Local",
+        "desc": "Profundo conocimiento de las carreteras, rutas y joyas ocultas de Marruecos."
+      },
+      "pricing": {
+        "title": "Precios Transparentes",
+        "desc": "Sin cargos ocultos. Lo que ves es exactamente lo que obtienes."
+      }
+    },
+    "stats": {
+      "cars": "+50 Coches Premium",
+      "clients": "+1000 Clientes Felices",
+      "assistance": "Asistencia 24/7"
+    },
+    "ctaTitle": "¿Listo para tu próxima aventura?",
+    "ctaButton": "Explora Nuestra Flota"
+  },
+  "seo": {
+    "title": "Drive Car Go | Alquiler de Coches de Lujo en Marruecos",
+    "desc": "Alquiler de coches de lujo y SUV en Marruecos. Servicio premium, viaje por carretera en Marruecos, entrega en el aeropuerto y soporte 24/7."
+  }
+}

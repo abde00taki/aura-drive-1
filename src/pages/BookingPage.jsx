@@ -44,7 +44,7 @@ export default function BookingPage() {
   return (
     <>
       <Helmet>
-        <title>Aura Drive - {t('booking.step1')}</title>
+        <title>Drive Car Go - {t('booking.step1')}</title>
       </Helmet>
 
       <div className="min-h-screen bg-dark dark:bg-[#121212] pt-32 pb-24 transition-colors duration-300">

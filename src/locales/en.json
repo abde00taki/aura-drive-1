@@ -49,7 +49,7 @@
     }
   },
   "footer": {
-    "rights": "All rights reserved. Aura Drive.",
+    "rights": "All rights reserved. Drive Car Go.",
     "sendMessage": "Send Message"
   },
   "about": {
@@ -206,8 +206,8 @@
     "heroTitle": "Your Journey, Our Passion",
     "heroSubtitle": "Experience Morocco with unparalleled luxury and comfort.",
     "storyTitle": "Our Story",
-    "storyContent": "Founded with a deep love for Moroccan landscapes, Aura Drive began as a small vision to elevate the standard of travel. We quickly transitioned from a standard rental agency to a dedicated provider of premium travel experiences. Today, we pride ourselves on offering a fleet that meets the highest standards of luxury, paired with local expertise that ensures every journey is unforgettable.",
-    "storyImageAlt": "Aura Drive Premium Fleet in Morocco",
+    "storyContent": "Founded with a deep love for Moroccan landscapes, Drive Car Go began as a small vision to elevate the standard of travel. We quickly transitioned from a standard rental agency to a dedicated provider of premium travel experiences. Today, we pride ourselves on offering a fleet that meets the highest standards of luxury, paired with local expertise that ensures every journey is unforgettable.",
+    "storyImageAlt": "Drive Car Go Premium Fleet in Morocco",
     "valuesTitle": "Our Core Values",
     "values": {
       "fleet": {
@@ -236,7 +236,7 @@
     "ctaButton": "Explore Our Fleet"
   },
   "seo": {
-    "title": "Aura Drive | Premium Car Rental Morocco",
+    "title": "Drive Car Go | Premium Car Rental Morocco",
     "desc": "Rent luxury cars and SUVs in Morocco. Premium service, airport delivery, and 24/7 support."
   }
 }

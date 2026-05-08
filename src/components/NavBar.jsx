@@ -25,6 +25,13 @@ export default function NavBar() {
     setIsOpen(false);
   };
 
+  const languages = [
+    { code: 'en', label: 'English', flag: 'https://flagcdn.com/gb.svg' },
+    { code: 'fr', label: 'Français', flag: 'https://flagcdn.com/fr.svg' },
+    { code: 'es', label: 'Español', flag: 'https://flagcdn.com/es.svg' },
+    { code: 'ar', label: 'العربية', flag: 'https://flagcdn.com/ma.svg' },
+  ];
+
   const navLinks = [
     { to: '/', label: t('nav.home') },
     { to: '/fleet', label: t('nav.fleet') },
@@ -44,9 +51,9 @@ export default function NavBar() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3">
-            <img src={brandLogo} alt="Aura Drive Logo" className="h-10 w-auto" />
+            <img src={brandLogo} alt="Drive Car Go Logo" className="h-10 w-auto" />
             <span className="text-2xl font-heading font-bold tracking-wider uppercase transition-colors duration-300 text-gray-900 dark:text-white">
-              AURA DRIVE
+              DRIVE CAR GO
             </span>
           </NavLink>
 
@@ -69,18 +76,21 @@ export default function NavBar() {
 
             {/* Lang Switcher */}
             <div className="relative group">
-              <button className="flex items-center space-x-1 text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] transition-colors">
-                <Globe className="w-4 h-4" />
-                <span className="text-sm uppercase">{i18n.language}</span>
+              <button className="flex items-center gap-2 text-gray-600 dark:text-gray-100 hover:text-primary dark:hover:text-[#C17767] transition-colors">
+                {languages.map(lang => lang.code === i18n.language && (
+                  <img key={lang.code} src={lang.flag} alt={lang.label} className="w-5 h-5 rounded-[2px] object-cover shadow-sm" loading="lazy" />
+                ))}
+                <span className="text-sm uppercase font-medium">{i18n.language}</span>
               </button>
-              <div className="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-24 bg-white dark:bg-[#1a1a1a] border border-black/5 dark:border-white/5 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                {['en', 'fr', 'ar'].map((lng) => (
+              <div className="absolute right-0 rtl:right-auto rtl:left-0 mt-2 w-32 bg-white dark:bg-[#1a1a1a] border border-black/5 dark:border-white/5 rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all overflow-hidden py-1">
+                {languages.map((lng) => (
                   <button
-                    key={lng}
-                    onClick={() => changeLanguage(lng)}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-600 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-[#242424] hover:text-primary dark:hover:text-[#C17767]"
+                    key={lng.code}
+                    onClick={() => changeLanguage(lng.code)}
+                    className="flex items-center gap-3 w-full text-left px-4 py-2.5 text-sm font-medium text-gray-600 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-[#242424] hover:text-primary dark:hover:text-[#C17767] transition-colors"
                   >
-                    {lng.toUpperCase()}
+                    <img src={lng.flag} alt={lng.label} className="w-5 h-5 rounded-[2px] object-cover shadow-sm" loading="lazy" />
+                    <span>{lng.code.toUpperCase()}</span>
                   </button>
                 ))}
               </div>
@@ -138,17 +148,18 @@ export default function NavBar() {
             </NavLink>
           ))}
 
-          <div className="flex space-x-4 rtl:space-x-reverse pt-2">
-            {['en', 'fr', 'ar'].map((lng) => (
+          <div className="flex flex-wrap gap-3 pt-2">
+            {languages.map((lng) => (
               <button
-                key={lng}
-                onClick={() => changeLanguage(lng)}
+                key={lng.code}
+                onClick={() => changeLanguage(lng.code)}
                 className={clsx(
-                  'px-3 py-1 rounded text-sm border transition-colors',
-                  i18n.language === lng ? 'bg-primary border-primary text-white shadow-md' : 'bg-white dark:bg-[#242424] border-black/10 dark:border-white/10 text-gray-600 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-[#333] dark:hover:text-[#C17767]'
+                  'flex items-center gap-2 px-3 py-2 rounded text-sm font-medium border transition-colors',
+                  i18n.language === lng.code ? 'bg-primary border-primary text-white shadow-md' : 'bg-white dark:bg-[#242424] border-black/10 dark:border-white/10 text-gray-600 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-[#333] dark:hover:text-[#C17767]'
                 )}
               >
-                {lng.toUpperCase()}
+                <img src={lng.flag} alt={lng.label} className="w-5 h-5 rounded-[2px] object-cover shadow-sm" loading="lazy" />
+                <span>{lng.code.toUpperCase()}</span>
               </button>
             ))}
           </div>

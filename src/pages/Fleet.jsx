@@ -18,7 +18,7 @@ export default function Fleet() {
   return (
     <>
       <Helmet>
-        <title>Aura Drive - {t('nav.fleet')}</title>
+        <title>Drive Car Go - {t('nav.fleet')}</title>
         <meta name="description" content={t('fleet.subtitle')} />
       </Helmet>
 

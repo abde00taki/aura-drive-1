@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Aura Drive - {t('nav.contact')}</title>
+        <title>Drive Car Go - {t('nav.contact')}</title>
       </Helmet>
 
       <div className="pt-32 pb-24 bg-dark dark:bg-[#121212] transition-colors duration-300 min-h-screen">
@@ -52,7 +52,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-gray-900 dark:text-white transition-colors duration-300 font-semibold mb-1">Email Address</h3>
-                  <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300 text-sm">contact@auradrive.com</p>
+                  <p className="text-gray-600 dark:text-gray-400 transition-colors duration-300 text-sm">contact@drivecargo.com</p>
                 </div>
               </div>
 

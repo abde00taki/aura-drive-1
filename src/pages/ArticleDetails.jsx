@@ -26,7 +26,7 @@ export default function ArticleDetails() {
   return (
     <div className="bg-white dark:bg-[#121212] min-h-screen transition-colors duration-300 pb-20">
       <Helmet>
-        <title>{`Aura Drive - ${t(`blog.articles.${id}.title`)}`}</title>
+        <title>{`Drive Car Go - ${t(`blog.articles.${id}.title`)}`}</title>
         <meta name="description" content={t(`blog.articles.${id}.excerpt`)} />
       </Helmet>
 

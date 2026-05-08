@@ -26,9 +26,9 @@ export default function Footer() {
           {/* Brand & Description */}
           <div className="text-center md:text-left rtl:md:text-right flex-1 w-full md:w-auto">
             <div className="mb-4 flex items-center justify-center md:justify-start rtl:md:justify-end gap-3">
-              <img src={brandLogo} alt="Aura Drive Logo" className="h-10 w-auto" />
+              <img src={brandLogo} alt="Drive Car Go Logo" className="h-10 w-auto" />
               <span className="text-2xl font-heading font-bold tracking-wider text-gray-900 dark:text-white uppercase transition-colors duration-300">
-                AURA DRIVE
+                DRIVE CAR GO
               </span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm max-w-sm mx-auto md:mx-0 transition-colors duration-300">

@@ -1,3 +1,23 @@
+import porscheMacanImg from '../assets/Porsche  macan.png';
+import porscheCayenneImg from '../assets/Porsche Cayenne.png';
+import rangeRoverSportImg from '../assets/Range Rover Sport.png';
+import rangeRoverVogueImg from '../assets/Range Rover Vogue.png';
+import rangeRoverEvoqueImg from '../assets/Range Rover Evoque.png';
+import mercedesGClassImg from '../assets/Mercedes-Benz G-Class.png';
+import mercedesEClassImg from '../assets/Mercedes-Benz E-Class.png';
+import vwTouaregImg from '../assets/Volkswagen touarge.png';
+import vwTouaregRLineImg from '../assets/Volkswagen Touareg R-Line.png';
+import daciaDusterImg from '../assets/Dacia Duster.png';
+import hyundaiTucsonImg from '../assets/Hyundai Tucson.png';
+import hyundaiTucsonFullImg from '../assets/Hyundai Tucson Full Option.png';
+import vwGolf8Img from '../assets/Volkswagen Golf 8.png';
+import vwGolf8RLineImg from '../assets/Volkswagen Golf 8 R-Line.png';
+import daciaLoganImg from '../assets/Dacia Logan.png';
+import renaultClio5Img from '../assets/Renault Clio 5.png';
+import hyundaiAccentImg from '../assets/Hyundai Accent.png';
+import mercedesAClassImg from '../assets/Mercedes-Benz A-Class.png';
+import mercedesVClassImg from '../assets/Mercedes-Benz V-Class (Vito).png';
+
 export const cars = [
   // --- LUXURY ---
   {
@@ -9,7 +29,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://www.fleet.be/wp-content/uploads/2024/04/Porsche_Macan_Turbo_2024-01@2x.jpg',
+    image: porscheMacanImg,
     pricePerDay: 4000,
     pricePerWeek: 28000,
     pricePerMonth: 108500
@@ -23,7 +43,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://cdn.motor1.com/images/mgl/y2PgRq/s1/2024-porsche-cayenne.jpg',
+    image: porscheCayenneImg,
     pricePerDay: 4000,
     pricePerWeek: 28000,
     pricePerMonth: 108500
@@ -37,7 +57,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://cdn.motor1.com/images/mgl/EjB3N/s1/land-rover-range-rover-sport-2021.jpg',
+    image: rangeRoverSportImg,
     pricePerDay: 3500,
     pricePerWeek: 24500,
     pricePerMonth: 102300
@@ -51,7 +71,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://images.collectingcars.com/059405/DSC00657.jpg?fit=clip&w=2000&auto=format,compress&cs=srgb&q=85%201x,https://images.collectingcars.com/059405/DSC00657.jpg?fit=clip&w=2000&auto=format,compress&cs=srgb&q=85%202x,https://images.collectingcars.com/059405/DSC00657.jpg??fit=clip&w=2000&auto=format,compress&cs=srgb&q=85%203x',
+    image: rangeRoverVogueImg,
     pricePerDay: 5500,
     pricePerWeek: 38500,
     pricePerMonth: 148800
@@ -65,7 +85,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://parkers-images.bauersecure.com/gallery-image/wp-images/113/static-exterior/801x534/evoque-p250-first-edition1.jpg',
+    image: rangeRoverEvoqueImg,
     pricePerDay: 1400,
     pricePerWeek: 9800,
     pricePerMonth: 37200
@@ -79,7 +99,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://pictures.dealer.com/m/mercedesbenzofmariettamb/0390/b5017991b99d2a540433d4344ffacd7ax.jpg',
+    image: mercedesGClassImg,
     pricePerDay: 11500,
     pricePerWeek: 80500,
     pricePerMonth: 310000
@@ -93,7 +113,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://mercedes-ina.com/wp-content/uploads/2024/04/e-class.jpg',
+    image: mercedesEClassImg,
     pricePerDay: 2500,
     pricePerWeek: 17500,
     pricePerMonth: 70000
@@ -109,7 +129,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/a26fd63a-1c2e-44da-8fed-1427e2ce3d4d/Volkswagen-Touareg-R.jpg?width=1750&fm=jpg&auto=format',
+    image: vwTouaregImg,
     pricePerDay: 1300,
     pricePerWeek: 9100,
     pricePerMonth: 37200
@@ -123,7 +143,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://ymimg1.b8cdn.com/uploads/article/8397/pictures/8880632/touareg_r_line-8.jpg',
+    image: vwTouaregRLineImg,
     pricePerDay: 1300,
     pricePerWeek: 9100,
     pricePerMonth: 37200
@@ -137,7 +157,7 @@ export const cars = [
     transmission: 'manual',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/0ea811aa-fdcf-4316-82a7-f6ef1725ce49/Dacia%20Duster%20(9).jpg',
+    image: daciaDusterImg,
     pricePerDay: 500,
     pricePerWeek: 3500,
     pricePerMonth: 13900
@@ -151,7 +171,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://di-uploads-pod28.dealerinspire.com/downtownhyundai/uploads/2025/03/2026-Hyundai-Tucson.png',
+    image: hyundaiTucsonImg,
     pricePerDay: 800,
     pricePerWeek: 5600,
     pricePerMonth: 21700
@@ -165,7 +185,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://img-ik.cars.co.za/ik-seo/carsimages/tr:n-stock_med/696bcc7a-6a8c-43ed-bcd1-4371847f93f3/2023-Hyundai-Tucson-20-CRDi-Executive-Auto.jpg?v=3362482912',
+    image: hyundaiTucsonFullImg,
     pricePerDay: 800,
     pricePerWeek: 5600,
     pricePerMonth: 21700
@@ -181,7 +201,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://media.motorbox.com/image/vw-golf-8-variant-2021-novita-motori-diesel-mild-hybrid-prezzi/6/9/5/695807/695807-16x9-lg.jpg',
+    image: vwGolf8Img,
     pricePerDay: 1000,
     pricePerWeek: 7000,
     pricePerMonth: 27900
@@ -195,7 +215,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://mediacloud.carbuyer.co.uk/image/private/s--GrlCN9BI--/v1579622053/carbuyer/volkswagen-golf-r-line_0.jpg',
+    image: vwGolf8RLineImg,
     pricePerDay: 1000,
     pricePerWeek: 7000,
     pricePerMonth: 27900
@@ -209,7 +229,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://autotijd.be/images/dacia/2016/logan/facelift/dacia-logan-2016-01.jpg',
+    image: daciaLoganImg,
     pricePerDay: 350,
     pricePerWeek: 2450,
     pricePerMonth: 9000
@@ -223,7 +243,7 @@ export const cars = [
     transmission: 'manual',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://static.motor.es/fotos-noticias/2020/02/precio-dacia-logan-glp-eco-g-202064727-1581336930_1.jpg',
+    image: daciaLoganImg,
     pricePerDay: 350,
     pricePerWeek: 2450,
     pricePerMonth: 9000
@@ -238,7 +258,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://a.ccdn.es/cnet/contents/media/renault/clio/1318213.jpg/900x505cut/',
+    image: renaultClio5Img,
     pricePerDay: 450,
     pricePerWeek: 3150,
     pricePerMonth: 10850
@@ -252,7 +272,7 @@ export const cars = [
     transmission: 'manual',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://www.completecar.ie/img/testdrives/13086_large.jpg',
+    image: renaultClio5Img,
     pricePerDay: 450,
     pricePerWeek: 3150,
     pricePerMonth: 10850
@@ -267,7 +287,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'petrol',
     seats: 5,
-    image: 'https://www.autotrader.com/wp-content/uploads/2021/07/2022-hyundai-accent-profile.jpg',
+    image: hyundaiAccentImg,
     pricePerDay: 450,
     pricePerWeek: 3150,
     pricePerMonth: 12400
@@ -281,7 +301,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 5,
-    image: 'https://static0.carbuzzimages.com/wordpress/wp-content/uploads/gallery-images/original/598000/400/598422.jpg',
+    image: mercedesAClassImg,
     pricePerDay: 1300,
     pricePerWeek: 8400,
     pricePerMonth: 34100
@@ -297,7 +317,7 @@ export const cars = [
     transmission: 'auto',
     fuel: 'diesel',
     seats: 8,
-    image: 'https://paultan.org/image/2023/07/2024-Mercedes-Benz-V-Class-EQV-Vito-eVito-facelift-debut-96.jpg',
+    image: mercedesVClassImg,
     pricePerDay: 2800,
     pricePerWeek: 19600,
     pricePerMonth: 80600

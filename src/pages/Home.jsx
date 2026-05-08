@@ -44,13 +44,11 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Aura Drive - {t('nav.home')}</title>
+        <title>Drive Car Go - {t('nav.home')}</title>
       </Helmet>
 
       <Hero />
-      <Destinations />
-      
-      <section className="py-24 bg-dark dark:bg-[#121212] transition-colors duration-300">
+      <section className="py-24 bg-[#F9F6F0] dark:bg-zinc-900/50 transition-colors duration-300">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-heading font-bold text-gray-900 dark:text-white mb-4 transition-colors duration-300">
@@ -78,6 +76,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Destinations />
 
       {/* About Us Section */}
       <section ref={aboutRef} className="py-24 bg-dark-lighter dark:bg-[#1a1a1a] transition-colors duration-300 reveal-on-scroll opacity-0 translate-y-10 ease-out overflow-hidden">

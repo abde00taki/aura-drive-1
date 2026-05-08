@@ -49,7 +49,7 @@
     }
   },
   "footer": {
-    "rights": "Tous droits réservés. Aura Drive.",
+    "rights": "Tous droits réservés. Drive Car Go.",
     "sendMessage": "Envoyer un Message"
   },
   "about": {
@@ -206,8 +206,8 @@
     "heroTitle": "Votre Voyage, Notre Passion",
     "heroSubtitle": "Découvrez le Maroc avec un luxe et un confort inégalés.",
     "storyTitle": "Notre Histoire",
-    "storyContent": "Fondée avec un amour profond pour les paysages marocains, Aura Drive a commencé comme une petite vision visant à élever les standards du voyage. Nous sommes rapidement passés d'une agence de location standard à un fournisseur dévoué d'expériences de voyage premium. Aujourd'hui, nous sommes fiers d'offrir une flotte qui répond aux normes les plus élevées de luxe, associée à une expertise locale qui rend chaque voyage inoubliable.",
-    "storyImageAlt": "Flotte Premium Aura Drive au Maroc",
+    "storyContent": "Fondée avec un amour profond pour les paysages marocains, Drive Car Go a commencé comme une petite vision visant à élever les standards du voyage. Nous sommes rapidement passés d'une agence de location standard à un fournisseur dévoué d'expériences de voyage premium. Aujourd'hui, nous sommes fiers d'offrir une flotte qui répond aux normes les plus élevées de luxe, associée à une expertise locale qui rend chaque voyage inoubliable.",
+    "storyImageAlt": "Flotte Premium Drive Car Go au Maroc",
     "valuesTitle": "Nos Valeurs Fondamentales",
     "values": {
       "fleet": {
@@ -236,7 +236,7 @@
     "ctaButton": "Explorez Notre Flotte"
   },
   "seo": {
-    "title": "Aura Drive | Location de Voitures de Luxe au Maroc",
+    "title": "Drive Car Go | Location de Voitures de Luxe au Maroc",
     "desc": "Louez des voitures de luxe et SUV au Maroc. Service premium, livraison à l'aéroport et assistance 24/7."
   }
 }
