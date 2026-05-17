@@ -270,7 +270,7 @@ export const cars = [
     year: 2023,
     category: 'economic',
     transmission: 'manual',
-    fuel: 'petrol',
+    fuel: 'diesel',
     seats: 5,
     image: renaultClio5Img,
     pricePerDay: 450,
